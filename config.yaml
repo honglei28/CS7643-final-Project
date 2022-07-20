@@ -1,0 +1,12 @@
+Train:
+  batch_size: 1
+  learning_rate: 0.002
+  reg: 0.00001
+  epochs: 20
+  steps: [6, 8]
+  warmup: 0
+  momentum: 0.95
+
+data:
+
+  save_best: True

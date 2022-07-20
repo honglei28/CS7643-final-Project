@@ -1,4 +1,3 @@
-from uuid import uuid5
 import torch
 from torch import nn
 
@@ -92,7 +91,7 @@ class Generater(nn.Module):
         output = self.c0(u0)
         output = self.tanh(output)
 
-        return output
+        return x+output
 
 
 class DisConvBlock(nn.Module):
