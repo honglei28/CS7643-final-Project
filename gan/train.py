@@ -166,12 +166,12 @@ def main():
     coeff_adv, coeff_pw = args.coeff_adv, args.coeff_pw
 
     train_dataset = mri_data.SliceDataset(
-        root=pathlib.Path('./dataset/singlecoil_train/'),
+        root=pathlib.Path('./data/singlecoil_train/'),
         transform=UnetDataTransform(which_challenge="singlecoil"),
         challenge='singlecoil'
     )
     val_dataset = mri_data.SliceDataset(
-        root=pathlib.Path('./dataset/singlecoil_val/'),
+        root=pathlib.Path('./data/singlecoil_val/'),
         transform=UnetDataTransform(which_challenge="singlecoil"),
         challenge='singlecoil'
     )
