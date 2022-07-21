@@ -160,18 +160,6 @@ class Discriminator(nn.Module):
         return output
 
 
-# x = torch.rand(2,1,320,320)
-
-# Gen = Generater()
-# test_gen = Gen.forward(x)
-# print(test_gen.shape)
-
-# Dis = Discriminator()
-
-# test_dis = Dis.forward(x)
-# print(test_dis.shape)
-
-
 
 
 
