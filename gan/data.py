@@ -19,8 +19,8 @@ def data_transform(kspace, mask, target, data_attributes, filename, slice_num):
     masked_kspace = transforms.apply_mask(kspace, mask_func)
     return masked_kspace
 
-dataset = mri_data.SliceDataset(
-    root=pathlib.Path('./dataset/singlecoil_train/'),
-    transform=UnetDataTransform(which_challenge="singlecoil"),
-    challenge='singlecoil'
-)
+# dataset = mri_data.SliceDataset(
+#     root=pathlib.Path('./data/singlecoil_train/'),
+#     transform=UnetDataTransform(which_challenge="singlecoil"),
+#     challenge='singlecoil'
+# )
